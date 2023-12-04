@@ -1,0 +1,92 @@
+<header class="desktop:block mobile:hidden h-14 px-8 absolute w-full">
+  <nav class="flex justify-end items-center h-full relative">
+    <img class="absolute top-0 left-4" src="./assets/images/logo.png" />
+    <ul class="absolute left-1/2 -translate-x-1/2 flex gap-4">
+      <li
+        class="w-[120px] px-2 py-1 rounded-2xl flex justify-center"
+      >
+        <a href="/" class="text-white font-bold text-xl">Home</a>
+      </li>
+      <li
+        class="w-[120px] px-2 py-1 rounded-2xl flex justify-center"
+      >
+        <a href="/fcnode" class="text-white font-bold text-xl">FC Node</a>
+      </li>
+      <li
+        class="w-[120px] px-2 py-1 rounded-2xl flex justify-center"
+      >
+        <a href="/dashboard" class="text-white font-bold text-xl">Dashboard</a>
+      </li>
+    </ul>
+    <ul class="flex gap-6">
+      <li>
+        <div class="flex bg-metamaskBg py-1 px-3 rounded-xl w-full gap-2">
+          <img src="./assets/images/logo-metamask.png" alt="logo-metamask" />
+          <span class="text-black bg-gray rounded-xl px-2"> Login </span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<header class="desktop:hidden mobile:block h-14 px-8 mb-12 absolute w-full">
+  <nav class="relative h-full flex items-center justify-between">
+    <img
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-8"
+      src="./assets/images/fcc-logo.svg"
+    />
+    <button
+      id="open-mobile-nav"
+      data-collapse-toggle="navbar-hamburger"
+      type="button"
+      class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-hamburger"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"
+        />
+      </svg>
+    </button>
+    <div class="flex bg-metamaskBg py-1 px-3 rounded-xl gap-1 w-[100px]">
+      <img src="./assets/images/metamask-logo.svg" alt="logo-metamask" />
+      <span class="text-white"> Login </span>
+    </div>
+  </nav>
+</header>
+
+<div
+  id="mobile-nav"
+  class="bg-navMenuBackground h-full w-full absolute top-0 z-30 hidden"
+>
+  <strong
+    id="close-mobile-nav"
+    class="text-[48px] align-center cursor-pointer alert-del absolute right-[30px] top-[4px] text-white"
+    >&times;</strong
+  >
+  <div class="rounded-xl bg-white p-4 w-[90%] m-auto mt-24">
+    <ul>
+      <li class="py-2">
+        <a href="/">Home</a>
+      </li>
+      <li class="py-2">
+        <a href="/fcnode">FC Node</a>
+      </li>
+      <li class="py-2">
+        <a href="/dashboard">Dashboard</a>
+      </li>
+    </ul>
+  </div>
+</div>
