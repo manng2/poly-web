@@ -57,6 +57,7 @@ tailwind.config = {
       height: {
         125: "31.25rem",
         100: "25rem",
+        60: "15rem",
       },
       text: {
         "5xl": {
@@ -95,6 +96,17 @@ tailwind.config = {
             width: "0%",
           },
         },
+        jump: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-1rem)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        }
       },
       animation: {
         "reverse-pin": "reverseSpin 1s linear infinite",

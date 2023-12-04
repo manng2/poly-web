@@ -1,29 +1,29 @@
-<div class="px-32 relative overflow-hidden text-white py-16">
+<div class="desktop:px-32 mobile:px-8 mobile:pb-8 desktop:pb-0 relative overflow-hidden text-white py-16 desktop:flex-row mobile:flex-col">
   <div>
     <video
       autoplay
       loop
       muted
-      class="absolute w-full top-0 left-0 z-[-1] object-cover bottom-0 right-0"
+      class="absolute w-full top-0 left-0 z-[-1] object-cover bottom-0 right-0 h-full"
     >
       <source src="./assets/videos/004.mp4" type="video/mp4" />
     </video>
   </div>
   <div>
-    <h3 class="text-center font-bold text-[35px] mb-4">
+    <h3 class="text-center font-bold desktop:text-[35px] mobile:text-[24px] mb-4">
       FC CHAIN: Revolutionizing Gaming and Metaverse Development
     </h3>
-    <p class="w-1/2 m-auto text-center">
+    <p class="desktop:w-1/2 m-auto text-center">
       Unleash the potential of gaming and metaverse development with FC CHAIN's
       swift processing power, dedicated support, innovative Solidity
       environment, NFT capabilities, verifiable randomness, and economical
       transaction fees.
     </p>
   </div>
-  <div class="flex mt-16">
-    <div class="flex flex-col justify-between my-4">
-      <div class="flex gap-4 justify-end">
-        <div class="flex flex-col justify-center items-end">
+  <div class="flex mt-16 desktop:flex-row mobile:flex-col">
+    <div class="flex flex-col justify-between my-4 gap-4">
+      <div class="flex gap-4 justify-end desktop:flex-row mobile:flex-row-reverse">
+        <div class="flex flex-col justify-center desktop:items-end mobile:items-start">
           <h5 class="font-bold mb-2">High processing capability</h5>
           <p>
             FC CHAIN processes transactions quickly, suitable for the gaming
@@ -34,8 +34,8 @@
           <img src="./assets/images/left-logo.png" />
         </div>
       </div>
-      <div class="flex gap-4 justify-end">
-        <div class="flex flex-col justify-center items-end">
+      <div class="flex gap-4 justify-end desktop:flex-row mobile:flex-row-reverse">
+        <div class="flex flex-col justify-center desktop:items-end mobile:items-start">
           <h5 class="font-bold mb-2">Maximum support for games</h5>
           <h5>
             FC CHAIN is tailored for gaming and metaverse project development.
@@ -45,8 +45,8 @@
           <img src="./assets/images/left-logo.png" />
         </div>
       </div>
-      <div class="flex gap-4 justify-end">
-        <div class="flex flex-col justify-center items-end">
+      <div class="flex gap-4 justify-end desktop:flex-row mobile:flex-row-reverse">
+        <div class="flex flex-col justify-center desktop:items-end mobile:items-start">
           <h5 class="font-bold mb-2">Solidity development environment</h5>
           <h5>
             FC CHAIN offers a development environment using Solidity, akin to
@@ -61,7 +61,7 @@
     <div>
       <img src="./assets/images/phone.png" />
     </div>
-    <div class="flex flex-col justify-between my-4">
+    <div class="flex flex-col justify-between my-4 gap-4">
       <div class="flex gap-4">
         <div>
           <img src="./assets/images/left-logo.png" />
