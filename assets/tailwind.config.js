@@ -51,6 +51,8 @@ tailwind.config = {
         brightYellow: '#b27a0b',
         darkPurple: '#1A0938',
         darkBlue: '#151c3b',
+        primary: 'rgba(185, 130, 255, 1)',
+        success: 'rgba(4, 255, 74, 1)'
       },
       backgroundImage: {
       },
