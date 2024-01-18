@@ -27,6 +27,10 @@ app.get("/mint", function(req, res) {
   res.render("mint");
 })
 
+app.get("/profile", function(req, res) {
+  res.render("profile");
+})
+
 
 app.listen(8080);
 console.log("Server is listening on port 8080");

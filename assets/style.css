@@ -7,6 +7,14 @@ body {
     background-size: cover;
 }
 
+button {
+    background:
+        linear-gradient(142.41deg, #2824E6 -12.51%, #E40FAC 136.14%) !important;
+    box-shadow: 0px 2px 12px 0px rgba(147, 30, 128, 1) !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+}
+
 .button-connect-wallet {
     background:
         linear-gradient(142.41deg, #2824E6 -12.51%, #E40FAC 136.14%);
@@ -138,4 +146,24 @@ box-shadow: 5px 5px 10px 0px rgba(70, 70, 70, 1) inset;
 
 .button-burn {
     background: linear-gradient(142.41deg, #2824E6 -12.51%, #E40FAC 136.14%);
+}
+
+.search-input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+
+    border-image-source: linear-gradient(142.41deg, #2824E6 -12.51%, #E40FAC 136.14%);
+}
+
+.list-filter li, .list-filter li div {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.list-filter li label {
+    color: white;
+}
+
+input[type="radio"]{
+    color:rgba(185, 130, 255, 1);
 }
