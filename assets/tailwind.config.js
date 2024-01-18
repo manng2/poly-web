@@ -52,7 +52,9 @@ tailwind.config = {
         darkPurple: '#1A0938',
         darkBlue: '#151c3b',
         primary: 'rgba(185, 130, 255, 1)',
-        success: 'rgba(4, 255, 74, 1)'
+        success: 'rgba(4, 255, 74, 1)',
+        'group-card': 'rgba(44, 44, 44, 1)',
+        'card-bg': 'rgba(255, 255, 255, 0.4)'
       },
       backgroundImage: {
       },

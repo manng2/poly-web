@@ -4,7 +4,7 @@ const path = require("path");
 
 // set the view engine to ejs
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+// app.set("views", path.join(__dirname, "views"));
 
 app.use("/assets", express.static("assets"));
 
@@ -12,8 +12,20 @@ app.use("/assets", express.static("assets"));
 
 // index page
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("home");
 });
+
+app.get("/marketplace", function (req, res) {
+  res.render("marketplace");
+})
+
+app.get("/burn", function(req, res) {
+  res.render("burn");
+})
+
+app.get("/mint", function(req, res) {
+  res.render("mint");
+})
 
 
 app.listen(8080);
