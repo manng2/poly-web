@@ -31,6 +31,10 @@ app.get("/profile", function(req, res) {
   res.render("profile");
 })
 
+app.get("/nft", function(req, res) {
+  res.render('nft');
+})
+
 
 app.listen(8080);
 console.log("Server is listening on port 8080");

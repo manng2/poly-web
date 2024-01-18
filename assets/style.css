@@ -13,6 +13,16 @@ button {
     box-shadow: 0px 2px 12px 0px rgba(147, 30, 128, 1) !important;
     padding: 8px 16px !important;
     border-radius: 8px !important;
+    color: white !important
+}
+
+#accordion-collapse button {
+    background: 
+linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2)) !important; 
+}
+
+#accordion-collapse h2 {
+    margin-bottom: 12px;
 }
 
 .button-connect-wallet {
@@ -166,4 +176,15 @@ box-shadow: 5px 5px 10px 0px rgba(70, 70, 70, 1) inset;
 
 input[type="radio"]{
     color:rgba(185, 130, 255, 1);
+}
+
+h5.text-primary,
+span.text-primary {
+    color: rgba(185, 130, 255, 1) !important;
+}
+
+.current-price {
+    background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
+linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
+padding: 8px 16px;
 }
