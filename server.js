@@ -31,6 +31,10 @@ app.get("/profile", function(req, res) {
   res.render("profile");
 })
 
+app.get("/collection", function(req, res) {
+  res.render("collection");
+})
+
 app.get("/nft", function(req, res) {
   res.render('nft');
 })
