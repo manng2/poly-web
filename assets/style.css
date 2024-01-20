@@ -261,8 +261,7 @@ border-radius: 8px;
 }
 
 .type-of-sale-item {
-    background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
-linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
+    background: linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
     padding: 12px 24px;
     border-radius: 10px;
     border: 1px solid;
@@ -271,8 +270,7 @@ border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0
 }
 
 .set-price-item {
-    background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
-linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
+    background: linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
 border: 1px solid;
 border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%);
 border-radius: 10px;
@@ -280,8 +278,7 @@ padding: 12px 24px;
 }
 
 .amount {
-    background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
-linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
+    background: linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
 border: 1px solid;
 
 border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%);
@@ -289,9 +286,14 @@ border-radius:  10px;
 padding: 12px 8px;
 }
 
+.amount input {
+    background: transparent;
+    outline: none;
+    text-align: right;
+}
+
 .duration button.button-duration {
-    background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
-linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2)) !important;
+    background: linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2)) !important;
 border: 1px solid !important;
 
 border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%) !important;

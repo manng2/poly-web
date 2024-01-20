@@ -1,4 +1,4 @@
-<header class="desktop:block mobile:hidden h-14 px-8 absolute w-full">
+<header class="desktop:block mobile:hidden h-14 px-8 absolute w-full z-[3]">
   <nav class="flex justify-end items-center h-full relative">
     <img class="absolute top-2 left-4" src="./assets/images/logo.png" />
     <ul class="absolute left-1/2 -translate-x-1/2 flex gap-4">
@@ -45,10 +45,6 @@
 
 <header class="desktop:hidden mobile:block h-14 px-8 mb-12 absolute w-full z-20">
   <nav class="relative h-full flex items-center justify-between">
-    <img
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-8"
-      src="./assets/images/logo.png"
-    />
     <button
       id="open-mobile-nav"
       data-collapse-toggle="navbar-hamburger"
@@ -74,9 +70,9 @@
         />
       </svg>
     </button>
-    <div class="flex bg-metamaskBg py-1 px-3 rounded-xl gap-1 w-[100px]">
+    <div class="flex bg-metamaskBg py-1 px-2 rounded-xl gap-1 w-[100px] items-center">
       <img src="./assets/images/logo-metamask.png" alt="logo-metamask" />
-      <span class="text-white"> Login </span>
+      <span class="text-black text-sm"> Connect </span>
     </div>
   </nav>
 </header>
@@ -90,37 +86,37 @@
     class="text-[48px] align-center cursor-pointer alert-del absolute right-[30px] top-[4px] text-white"
     >&times;</strong
   >
-  <div class="rounded-xl bg-white p-4 w-[90%] m-auto mt-24">
+  <div class="rounded-xl bg-white p-4 w-[90%] m-auto mt-24 text-black absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
     <ul>
       <li
         class="py-2"
       >
-        <a href="/" class="text-white font-bold text">Home</a>
+        <a href="/" class="font-bold text">Home</a>
       </li>
       <li
         class="py-2"
       >
-        <a href="/" class="text-white font-bold text">Mint & Burn</a>
+        <a href="/" class="font-bold text">Mint & Burn</a>
       </li>
       <li
         class="py-2"
       >
-        <a href="/fcnode" class="text-white font-bold text">Marketplace</a>
+        <a href="/fcnode" class="font-bold text">Marketplace</a>
       </li>
       <li
         class="py-2"
       >
-        <a href="/dashboard" class="text-white font-bold text">Game</a>
+        <a href="/dashboard" class="font-bold text">Game</a>
       </li>
       <li
         class="py-2"
       >
-        <a href="/dashboard" class="text-white font-bold text">Betting</a>
+        <a href="/dashboard" class="font-bold text">Betting</a>
       </li>
       <li
         class="py-2"
       >
-        <a href="/dashboard" class="text-white font-bold text">Document</a>
+        <a href="/dashboard" class="font-bold text">Document</a>
       </li>
     </ul>
   </div>

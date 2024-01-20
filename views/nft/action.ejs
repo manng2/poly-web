@@ -1,11 +1,9 @@
 <div
     class="flex desktop:flex-row mobile:flex-col justify-between desktop:px-32 mobile:px-4 mobile:pb-8 desktop:pb-0 relative overflow-hidden desktop:pt-36 mobile:pt-32 gap-32 text-white">
-    <div class="w-1/2">
-        <!--Trang NFT details với complete listing-->
-       <!-- <%- include('introduction') %> -->
-       <%- include('complete-listing') %>
+    <div class="desktop:w-1/2">
+        <%- include('introduction') %>
     </div>
-    <div class="w-1/2">
+    <div class="desktop:w-1/2">
         <div class="flex justify-center rounded-2xl nft-card-detail-img">
             <img src="./assets/images/player-card/player-2.png" />
         </div>
@@ -20,7 +18,7 @@
         </div>
         <div class="mt-4">
             <h5 class="text-primary text-[32px] font-bold">Trait</h5>
-            <div class="flex gap-2 mt-2 justify-center w-full">
+            <div class="flex desktop:flex-row mobile:flex-col gap-2 mt-2 justify-center w-full">
                 <div class="trait-item px-4 py-2">
                     <span>Body</span>
                     <span>Light 9%</span>
