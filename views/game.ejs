@@ -14,9 +14,18 @@
 </head>
 
 <body>
-    <%- include('game/board') %>
-    <script src="../assets/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <%- include('header') %>
+  <%- include('game/decor') %>
+  <section class="px-8 py-48">
+    <h5 class="text-[45px] font-bold text-primary text-center">Polysport Flip Card</h5>
+    <div class="grid grid-cols-3 gap-3 mt-4">
+      <%- include('game/ranking') %>
+      <%- include('game/board') %>
+      <%- include('game/nft') %>
+    </div>
+  </section>
+  <script src="../assets/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 
 </html>

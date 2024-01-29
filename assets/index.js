@@ -43,15 +43,13 @@ function closeBurnCardDialog() {
 function init() {
   // TODO: Sample handle click flip card
 
-  // const cardGames = Array.from(document.getElementsByClassName("card-game"));
-  // console.log(cardGames);
-  // cardGames.forEach(it => {
-  //   it.addEventListener("click", function () {
-  //     console.log(this);
+  const cardGames = Array.from(document.getElementsByClassName("card-game"));
+  cardGames.forEach(it => {
+    it.addEventListener("click", function () {
 
-  //     flipCard(this, 'assets/images/player-card/player-1.png')
-  //   })
-  // })
+      flipCard(this, 'assets/images/player-card/player-1.png')
+    })
+  })
 
   listenOpenMobileNav();
   listenCloseMobileNav();

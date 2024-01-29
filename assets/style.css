@@ -218,6 +218,10 @@ span.text-primary {
     color: rgba(185, 130, 255, 1) !important;
 }
 
+.border-primary {
+    border-color: rgba(185, 130, 255, 1) !important;
+}
+
 .current-price {
     background: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0.36) 47.78%, #484848 91.69%),
 linear-gradient(0deg, rgba(185, 32, 237, 0.2), rgba(185, 32, 237, 0.2));
@@ -301,6 +305,7 @@ border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0
 
 #card-game {
     background-color: transparent;
+    cursor: pointer;
 }
 
 #card-game-inner {
@@ -331,3 +336,34 @@ border-image-source: linear-gradient(93.63deg, #484848 5.36%, rgba(72, 72, 72, 0
 #card-game-back {
     transform: rotateY(180deg);
   }
+
+.ranking-table {
+    background: linear-gradient(142.41deg, rgba(40, 36, 230, 0.4) -12.51%, rgba(228, 15, 172, 0.4) 136.14%);
+    border: 1px solid;
+}
+
+.nft-pagination {
+    background: rgba(4, 4, 4, 0.4);
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    color: white;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-pagination span {
+    cursor: pointer;
+}
+
+.nft-pagination .active {
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
