@@ -41,6 +41,18 @@ function closeBurnCardDialog() {
 }
 
 function init() {
+  // TODO: Sample handle click flip card
+
+  // const cardGames = Array.from(document.getElementsByClassName("card-game"));
+  // console.log(cardGames);
+  // cardGames.forEach(it => {
+  //   it.addEventListener("click", function () {
+  //     console.log(this);
+
+  //     flipCard(this, 'assets/images/player-card/player-1.png')
+  //   })
+  // })
+
   listenOpenMobileNav();
   listenCloseMobileNav();
 }
@@ -63,3 +75,16 @@ $(".carousel .carousel-item").each(function () {
     next.children(":first-child").clone().appendTo($(this));
   }
 });
+
+function flipCard(el, img) {
+  const cardGameInner = el.querySelector("#card-game #card-game-inner");
+  const cardGameBackImg = el.querySelector("#card-game-back img");
+
+  if (cardGameInner.style.transform !== 'rotateY(180deg)') {
+    cardGameInner.style.transform = 'rotateY(180deg)';
+    cardGameBackImg.src = img;
+  } else {
+    cardGameInner.style.transform = 'none';
+    cardGameBackImg.src = '';
+  }
+}
