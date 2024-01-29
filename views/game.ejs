@@ -16,12 +16,17 @@
 <body>
   <%- include('header') %>
   <%- include('game/decor') %>
-  <section class="px-8 py-48">
-    <h5 class="text-[45px] font-bold text-primary text-center">Polysport Flip Card</h5>
-    <div class="grid grid-cols-3 gap-3 mt-4">
-      <%- include('game/ranking') %>
+  <section class="px-8 desktop:py-48 mobile:py-24">
+    <h5 class="desktop:text-[45px] mobile:text-3xl font-bold text-primary text-center">Polysport Flip Card</h5>
+    <div class="desktop:grid desktop:grid-cols-[1fr_2fr_1fr] mobile:flex mobile:flex-col gap-3 mt-4">
+      <div class="desktop:block mobile:hidden">
+        <%- include('game/ranking') %>
+      </div>
       <%- include('game/board') %>
       <%- include('game/nft') %>
+      <div class="desktop:hidden mobile:block">
+        <%- include('game/ranking') %>
+      </div>
     </div>
   </section>
   <script src="../assets/index.js"></script>

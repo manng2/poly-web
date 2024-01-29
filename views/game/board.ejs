@@ -1,232 +1,178 @@
 <section class="flex flex-col items-center gap-4">
-    <div class="grid grid-cols-4 w-full">
-        <div class="text-center text-white flex flex-col items-center">
-            <label>Balances</label>
-            <div
-                class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
-                <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
-            </div>
-        </div>
-        <div class="text-center text-white flex flex-col items-center">
-            <label>Reward Winner</label>
-            <div
-                class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
-                <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
-            </div>
-        </div>
-        <div class="text-center text-white flex flex-col items-center">
-            <label>Number of click</label>
-            <div
-                class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
-                <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
-            </div>
-        </div>
-        <div class="text-center text-white flex flex-col items-center">
-            <label>Number of uses</label>
-            <div
-                class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
-                <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
-            </div>
-        </div>
-    </div>
-    <div class="grid w-full grid-cols-10 gap-2">
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
+    <div class="flex desktop:flex-col mobile:flex-col-reverse gap-3">
+        <div class="grid desktop:grid-cols-4 mobile:grid-cols-2 w-full">
+            <div class="text-center text-white flex flex-col items-center">
+                <label class="mobile:text-[12px] desktop:text-[16px]">Balances</label>
+                <div
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
+                    <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
                 </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            </div>
+            <div class="text-center text-white flex flex-col items-center">
+                <label class="mobile:text-[12px] desktop:text-[16px]">Reward Winner</label>
+                <div
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
+                    <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
+                </div>
+            </div>
+            <div class="text-center text-white flex flex-col items-center">
+                <label class="mobile:text-[12px] desktop:text-[16px]">Number of click</label>
+                <div
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
+                    <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
+                </div>
+            </div>
+            <div class="text-center text-white flex flex-col items-center">
+                <label class="mobile:text-[12px] desktop:text-[16px]">Number of uses</label>
+                <div
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
+                    <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">0.00</span>
                 </div>
             </div>
         </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+        <div class="grid w-full desktop:grid-cols-10 mobile:grid-cols-5 gap-2">
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
-                </div>
-            </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
-                </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="desktop:w-[50px] desktop:h-[70px] card-game" id="card-game">
-            <div id="card-game-inner">
-                <div id="card-game-front">
-                    <img src="assets/images/card.png" />
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
-                <div id="card-game-back">
-                    <img src="assets/images/player-card/player-1.png" />
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="w-[50px] h-[70px] card-game" id="card-game">
+                    <div id="card-game-inner">
+                        <div id="card-game-front">
+                            <img src="assets/images/card.png" />
+                        </div>
+                        <div id="card-game-back">
+                            <img src="assets/images/player-card/player-1.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,19 +182,19 @@
         <div class="grid grid-cols-3 mt-2 gap-4">
             <div class="text-center text-white flex flex-col items-center">
                 <div
-                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
                     <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">Normal</span>
                 </div>
             </div>
             <div class="text-center text-white flex flex-col items-center">
                 <div
-                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
                     <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">Medium</span>
                 </div>
             </div>
             <div class="text-center text-white flex flex-col items-center">
                 <div
-                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] relative">
+                    class="flex justify-center items-center bg-[url('assets/images/game-info-frame.png')] bg-no-repeat bg-cover bg-center desktop:w-[130px] desktop:h-[40px] mobile:w-[100px] mobile:h-[25px] mobile:text-[12px] desktop:text-[16px] relative">
                     <span class="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">Hard</span>
                 </div>
             </div>
